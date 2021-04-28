@@ -26,20 +26,11 @@
 
             <div class="wrapper">
                 <!-- album -->
-                <div class="album">
-                    <img src="" alt="#">
-                    <div class="title">gnorg</div>
-                    <div class="autore">gnorg2</div>
-                    <div class="anno">1998</div>
-                </div>
-                <!--fine album -->
-
-                <!-- album -->
-                <div class="album">
-                    <img src="" alt="#">
-                    <div class="title">gnorg</div>
-                    <div class="autore">gnorg2</div>
-                    <div class="anno">1998</div>
+                <div v-for="cd in cds" class="album">
+                    <img :src="cd.poster" alt="cd.title">
+                    <div class="title">{{ cd.title }}</div>
+                    <div class="autore">{{ cd.author }}</div>
+                    <div class="anno">{{ cd.year }}</div>
                 </div>
                 <!--fine album -->
             </div>
