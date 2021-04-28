@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: hsl(207deg 21% 23%);
+}
+
+.logo {
+    padding: 5px;
+}
+
+img {
+    width: 50px;
+    margin-left: 10px;
+}
+
+main {
+    background-color: hsl(208deg 33% 18%);
+}
+
+.wrapper {
+    max-width: 1200px;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album {
+    width: calc( 100% / 6 );
+    background-color: hsl(207deg 21% 23%);
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    color: white;
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+.autore, .anno {
+    color: grey;
+    font-size: 15px;
+}
